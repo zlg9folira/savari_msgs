@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>savari_msgs</name>
+  <version>1.1.0</version>
+  <description>The savari_msgs package contains messages to interface with SAVARI Inc on-board-unit (OBU).</description>
+  <maintainer email="foadhaji@buffalo.edu">Foad Hajiaghajani</maintainer>
+  <license>self</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export>
+  </export>
+</package>
