@@ -31,9 +31,28 @@ cd ..
 catkin_make --only-pkg-with-deps savari_msgs
 ```
 
-## Usage 
+## Test & Usage 
 
-Include the header files in your code files as: 
+Make sure your ROS distribution now recognizes the new msgs by running `rosmsg info`, you may need to source the bash file before this step (`source catkin_ws/devel/setup.bash`):
+```sh
+rosmsg info savari_msgs/Gps
+```
+The command above should return structure of the message (Gps) as:
+```sh
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string message_id
+float64 latitude
+float64 longitude
+float64 elevation
+float64 speed
+float64 heading
+uint32 gpsstatus
+```
+
+Now, you may include the header files in your code as: 
 ```sh
 #include <savari_msgs/Gps.h>
 #include <savari_msgs/Vehicle.h>
