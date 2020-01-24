@@ -86,3 +86,9 @@ float64[3] positionalaccuracy
 uint32 transmissionstate
 
 int32 event_descr_len
+
+float32 bsm_interval
+
+# Distance between pair of vehicles (ONLY for leader/follower applications)
+float32 distance
+
