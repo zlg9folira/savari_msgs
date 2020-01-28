@@ -83,7 +83,10 @@ float64[3] positionalaccuracy
 # 1 - neutral gear
 # 2 - reverse gear
 # 3 - 9 - drive gear(s)
-uint32 transmissionstate
+uint32 transmissionstate0
+uint32 transmissionstate1
+uint32 transmissionstate2
+uint32 transmissionstate3
 
 int32 event_descr_len
 
